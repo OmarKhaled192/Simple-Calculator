@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right,blueviolet, rgb(240, 169, 54));
+}
+.calc .all-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  background-color: white;
+  justify-content: center;
+  border-radius:0 0 10px 10px ;
+  border-top: none;
+}
+.calc div {
+  border-radius: 10px 10px 0 0;
+}
+.calc div:not(.all-buttons) {
+  width: 320px;
+  background-color: white;
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+}
+.calc div .change-color {
+  width: 20px;
+  height: 20px; 
+  border-radius: 50%;
+  background-color: #333;
+}
+.calc input {
+  grid-column: span 4;
+  border: none;
+  background-color: white;
+  color: #333;
+  height: 100px;
+  text-align: end;
+  padding: 0 15px;
+  font-size: 35px;
+  width: 320px;
+  font-family: monospace ;
+  outline: none;
+}
+button {
+  background-color: rgb(179, 226, 255);
+  outline: none;
+  color: darkblue;
+  font-size: 20px;
+  font-family: monospace;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+button:last-child {
+  width: 120px;
+  border-radius: 30px;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+button:first-child {
+  background-color: rgb(255, 180, 127);
+  color: rgb(233, 106, 16) ;
+}
+button:last-child {
+  background-color: rgba(53, 255, 154, 0.755);
+}
+.op {
+  background-color: rgb(204, 159, 246);
+}
